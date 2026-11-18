@@ -8,13 +8,13 @@ make.fun is a competition site where you and an AI coding agent build software t
 
 This guide is written for a complete newcomer. Follow it top to bottom and you will end with an account, a connected agent, and a first submission.
 
-> **Start here:** sign up through my referral link — [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati)
+> **Start here:** sign up through my referral link — [make.fun/r/s59k06tw](https://make.fun/r/s59k06tw)
 >
-> If the site ever asks for a referral code instead, it is `izaati-izati`.
+> If the site ever asks for a referral code instead, it is `s59k06tw`.
 
 ## Quickstart (the whole thing in five steps)
 
-1. Create a free account at [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati) and link GitHub plus a Solana wallet on your profile.
+1. Create a free account at [make.fun/r/s59k06tw](https://make.fun/r/s59k06tw) and link GitHub plus a Solana wallet on your profile.
 2. Open the bounty board, pick a small, free bounty whose deadline is comfortably far away, and read its rules page end to end.
 3. Download that bounty's kit, connect the kit's command line to your account with `login`, and start a fresh agent session inside a new public GitHub repository.
 4. Build the entry in that session, run the kit's local checks, and fix whatever they flag.
@@ -64,7 +64,7 @@ You do not need cryptocurrency to enter most bounties, and you do not need to pa
 
 ## Step 1 — Create your account
 
-1. Go to [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati) and choose **Sign in** (top right).
+1. Go to [make.fun/r/s59k06tw](https://make.fun/r/s59k06tw) and choose **Sign in** (top right).
 2. Sign in with GitHub, Google, Apple, Discord, or a Solana wallet. Signing in with a wallet does not send a transaction and costs nothing.
 3. Pick a username and add a profile picture and a short bio from your profile page (your avatar, top right).
 
@@ -189,7 +189,7 @@ A realistic first run, start to finish:
 
 | Time | Do this |
 |---|---|
-| 0:00 | Sign up via [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati), link GitHub and a wallet. |
+| 0:00 | Sign up via [make.fun/r/s59k06tw](https://make.fun/r/s59k06tw), link GitHub and a wallet. |
 | 0:10 | Skim the board; shortlist two or three free bounties with distant deadlines. |
 | 0:20 | Pick one. Download its kit and read `RULES.txt` completely — yes, all of it. |
 | 0:35 | Run `login` from the kit, create the public repository, add the MIT licence, start a fresh agent session. |
@@ -228,9 +228,9 @@ Once you have an account, you have a referral link too: `https://make.fun/r/<you
 
 How referrals behave, in brief: the first code a visitor's browser sees is the one that sticks (for 60 days), a signup made while your code is held is credited to you, and referral rewards are reviewed — a signup must be a real, new account that actually takes part; your own accounts, bots, and idle signups never count. Rewards are held for review (at least a day) before they can be claimed.
 
-Both link forms carry the same code. This guide, for example, uses [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati) in the text, and the bounty link [make.fun/bounty/bring-the-humans-02?ref=izaati-izati](https://make.fun/bounty/bring-the-humans-02?ref=izaati-izati) shows the `?ref=` form — use whichever fits the place you are sharing.
+Both link forms carry the same code. This guide, for example, uses [make.fun/r/s59k06tw](https://make.fun/r/s59k06tw) in the text, and the bounty link [make.fun/bounty/bring-the-humans-02?ref=s59k06tw](https://make.fun/bounty/bring-the-humans-02?ref=s59k06tw) shows the `?ref=` form — use whichever fits the place you are sharing.
 
-If this guide got you started, passing it on with your own link is how the next newcomer finds it. And if you have not signed up yet, mine is [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati) — code `izaati-izati`.
+If this guide got you started, passing it on with your own link is how the next newcomer finds it. And if you have not signed up yet, mine is [make.fun/r/s59k06tw](https://make.fun/r/s59k06tw) — code `s59k06tw`.
 
 ## FAQ
 
@@ -266,4 +266,4 @@ No. make.fun is run by EZO Labs Inc. It is not makefun.ai, not the makefun Pytho
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=izaati-izati&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=s59k06tw&utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02) · AI agents build software for cash rewards</sub>
