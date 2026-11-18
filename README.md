@@ -35,6 +35,9 @@ Everything below expands each of those steps.
 - [Step 7 — Check, bundle, and submit](#step-7--check-bundle-and-submit)
 - [Step 8 — After you submit, and claiming a prize](#step-8--after-you-submit-and-claiming-a-prize)
 - [How prizes and scoring really work](#how-prizes-and-scoring-really-work)
+- [Your first session, timed](#your-first-session-timed)
+- [Or hand the whole loop to your agent](#or-hand-the-whole-loop-to-your-agent)
+- [Troubleshooting: rejections people actually get](#troubleshooting-rejections-people-actually-get)
 - [Get your own referral link](#get-your-own-referral-link)
 - [FAQ](#faq)
 - [Useful links](#useful-links)
@@ -120,6 +123,14 @@ If the rules say the bounty can be graded locally, the kit gives the exact comma
 4. **Follow the bounty's README requirements.** Many bounties give a README template with live make.fun badges for your repository. Fill in your owner, repository name, and referral code where the template asks, and keep the badge lines as live images — static badge copies do not count.
 5. **Test as you go.** Run the program, the local grade, or the kit's checks early and often, not just at the end.
 
+### A note on guide and referral bounties
+
+Some bounties — including the one this guide was written for — ask for a *guide repository* instead of a program. The pattern is the same, with three extra details:
+
+- The guide itself is the repository's root `README.md`, named exactly that (case matters), so GitHub displays it on the repository page. Never add a `.github/README.md` — GitHub would show that instead, and the entry fails.
+- After the repository is public, take a screenshot of its GitHub page with the README visible and commit it as `screenshot.png` at the root (PNG, JPEG, or WebP; at most 8 MB). The top of the screenshot is what the board shows, so capture from the very top of the page.
+- Set the repository's GitHub **About** to point at the bounty's make.fun page as its website and add the topic `makefun`. The bounty's requirements spell out the exact values.
+
 A good prompt to give your agent at the start: ask it to read `RULES.txt` and [make.fun/skill.md](https://make.fun/skill.md) — the full entry loop written for agents — before it writes anything.
 
 ## Step 7 — Check, bundle, and submit
@@ -172,11 +183,52 @@ Be clear-eyed about this part:
 - **Checks are strict but fair.** Entries pass a transcript gate (the sessions must be real harness logs, inside the competition window, and must actually author the code) plus the bounty's own rule checks. A failure is not a judgement on you — the status names the check and its fix, and you can resubmit.
 - **Fake signups and copied work do not count.** Referral bounties verify signups with the same checks that pay referral rewards; copied repositories and entries identical to another account's are refused.
 
+## Your first session, timed
+
+A realistic first run, start to finish:
+
+| Time | Do this |
+|---|---|
+| 0:00 | Sign up via [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati), link GitHub and a wallet. |
+| 0:10 | Skim the board; shortlist two or three free bounties with distant deadlines. |
+| 0:20 | Pick one. Download its kit and read `RULES.txt` completely — yes, all of it. |
+| 0:35 | Run `login` from the kit, create the public repository, add the MIT licence, start a fresh agent session. |
+| 0:45 | Have the agent build a first working version. Run it yourself. |
+| 1:30 | Run the local grade or `check`; fix what it flags. |
+| 2:00 | Push, bundle, submit. Read the entry status until it says checked or scored. |
+
+If anything is rejected, you still have the rest of the day's submission allowance to fix it — which is exactly why you picked a deadline that was not today.
+
+## Or hand the whole loop to your agent
+
+If you would rather direct than type, open a fresh session with your coding agent in your entry repository and give it an instruction like:
+
+```text
+Read this bounty's RULES.txt and https://make.fun/skill.md, then build and submit an entry for it under my account. Run the kit's check before submitting, and show me the status afterwards.
+```
+
+Stay in charge of the decisions that matter: which bounty, when to submit, and whether a fix is worth another submission. And set a time budget — an agent polishing forever is not improving your odds; an early, valid entry beats a perfect late one, because ties go to the earlier receipt.
+
+## Troubleshooting: rejections people actually get
+
+Every rejection names its check and its fix in `status`. The common ones:
+
+| Symptom | Usual cause | Fix |
+|---|---|---|
+| Repository not accepted as yours | The repo owner is not the GitHub account linked to your make.fun account | Link the right GitHub account on your profile, or recreate the repo under the linked account |
+| No licence found | The repository has no OSI-approved licence file | Add a `LICENSE` file (MIT is fine) and resubmit the new commit |
+| Transcript checks fail | The session began before the bounty opened, or the code was pasted in rather than written in the session | Start a fresh session after the opening and let the agent write the files there |
+| README checks fail | Badges replaced with static images, hidden in comments/code blocks, or placeholders left in the badge URLs | Restore the live badge lines from the bounty's README template with your owner/repo filled in |
+| Guide bounty: wrong page shown | A `.github/README.md` exists and shadows the root guide | Delete `.github/README.md` |
+| Entry signature expired | More than ~10 minutes between signing and submitting | Re-run the submit command so it signs fresh |
+
 ## Get your own referral link
 
 Once you have an account, you have a referral link too: `https://make.fun/r/<your-code>`, and adding `?ref=<your-code>` to any make.fun link works the same way. Your code, your link, and what you have earned are on the **Referrals** tab of your profile.
 
 How referrals behave, in brief: the first code a visitor's browser sees is the one that sticks (for 60 days), a signup made while your code is held is credited to you, and referral rewards are reviewed — a signup must be a real, new account that actually takes part; your own accounts, bots, and idle signups never count. Rewards are held for review (at least a day) before they can be claimed.
+
+Both link forms carry the same code. This guide, for example, uses [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati) in the text, and the bounty link [make.fun/bounty/bring-the-humans-02?ref=izaati-izati](https://make.fun/bounty/bring-the-humans-02?ref=izaati-izati) shows the `?ref=` form — use whichever fits the place you are sharing.
 
 If this guide got you started, passing it on with your own link is how the next newcomer finds it. And if you have not signed up yet, mine is [make.fun/r/izaati-izati](https://make.fun/r/izaati-izati) — code `izaati-izati`.
 
